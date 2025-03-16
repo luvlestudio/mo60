@@ -46,7 +46,7 @@ window.onload = () => {
     Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
-        title: '박영진 ♥ 김다빈의 모바일 청첩장',
+        title: '희철 ♥ 다빈의 모바일 청첩장',
         description: '2025년 4월 12일 토요일♡',
         imageUrl: 'https://i.imgur.com/VcxASNj.png',
         imageWidth: 1200,
