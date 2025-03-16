@@ -48,7 +48,7 @@ window.onload = () => {
       content: {
         title: '박영진 ♥ 김다빈의 모바일 청첩장',
         description: '2025년 4월 12일 토요일♡',
-        imageUrl: 'https://i.imgur.com/OlvO9qR.png',
+        imageUrl: 'https://i.imgur.com/VcxASNj.png',
         imageWidth: 1200,
         imageHeight: 630,
         link: {
