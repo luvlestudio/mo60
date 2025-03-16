@@ -47,7 +47,7 @@ window.onload = () => {
       objectType: 'feed',
       content: {
         title: '희철 ♥ 다빈의 모바일 청첩장',
-        description: '2025년 4월 12일 토요일♡',
+        description: '2025년 4월 17일 목요일♡',
         imageUrl: 'https://i.imgur.com/VcxASNj.png',
         imageWidth: 1200,
         imageHeight: 630,
