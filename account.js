@@ -40,12 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function copy(text) {
   // iOS와 안드로이드 모두 지원하는 복사 기능
-  if (navigator.clipboard && window.isSecureContext) {
+  if (navigator.userAgent.match(/ipad|iphone/i)) {
+    // iOS
+    fallbackCopyTextToClipboard(text);
+  } else if (navigator.clipboard && window.isSecureContext) {
     // 기본 Clipboard API 사용 (안드로이드)
     navigator.clipboard
       .writeText(text)
       .then(() => {
         alert('클립보드에 복사되었습니다.');
+        fallbackCopyTextToClipboard(text);
       })
       .catch(() => {
         // Clipboard API 실패시 fallback
@@ -67,4 +71,5 @@ function fallbackCopyTextToClipboard(copyText) {
 
   document.execCommand('copy');
   document.body.removeChild(tmpTextarea);
+  alert('클립보드에 복사되었습니다.');
 }
